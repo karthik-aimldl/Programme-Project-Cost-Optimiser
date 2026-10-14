@@ -338,4 +338,5 @@ function plan(){
 function render(){const v=DB.view||'port';$('#app').innerHTML=head()+`<div class="shell ${sidebarCollapsed?'collapsed':''}">`+sideNav()+'<main>'+`<div class="workspace-intro"><div><h2>${v==='port'?'Portfolio overview':v==='setup'?'Programme setup':v==='res'?'Resource management':'Allocation workspace'}</h2><p>Plan budgets, balance capacity and compare practical allocation options.</p></div><span class="m">Local workspace · Private to this browser</span></div>`+nav()+(v==='port'?portfolio():v==='setup'?setup():v==='res'?resView():plan())+'</main></div>';save()}
 
 paletteInit();render();initLocalStorage();
+ 
 </script></body></html>
